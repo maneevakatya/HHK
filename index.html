@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body class="index">
+    <header class="header">
+      <div class="header__logo">
+        <a href="/">
+          <img class="header__logo-img" src="assets/img/tigr2.png" alt="Logo">
+        </a>
+      </div>
+      <div class="header__container">
+        <button class="burger-menu"><span></span></button>
+      <nav class="header__nav">
+        <ul class="header__list header-list--menu">
+          <li class="header__item">
+            <a class="header__link" href="http://vsegdapoputi.ru" target="_blank">программа лояльности</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link js-scrollTo" href="/#map">карта азс</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">интересно о 101</a>
+          </li>
+          <li class="header__item header__item--last">
+            <a class="header__link js-scrollTo" href="#request">обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__list header__list--contacts">
+        <li class="header__item header__item--mail">
+          <a class="header__link header__link--mail" href="mailto:INFO@NNK-101.COM">INFO@NNK-101.COM</a>
+        </li>
+        <li class="header__item header__item--phone">
+          <a class="header__link header__link--phone" href="tel:8 800 200 0343">8 800 200 0343</a>
+        </li>
+      </ul>
+    </div>
+    </header>
+
+    <main class="main">
+    <section class="intro" id="intro">
+	  <a href="http://vsegdapoputi.ru" target="_blank">
+		<img class="intro__card" src="assets/img/big_new.png">
+	  </a>
+      <img class="intro__101logo" src="assets/img/img-top.png">
+      <span class="intro__text">Будь первым,<br> &nbsp; &nbsp; &nbsp; заправь 101!</span>
+    </section>
+    <section class="advantages" id="advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <span class="advantages__trap"></span><p class="advantages__text">увеличивает мощность двигателя</p>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__trap"></span><p class="advantages__text">увеличивает срок службы автомобиля*</p>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__trap"></span><p class="advantages__text">очищает двигатель от отложений на 50-80%**</p>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__trap"></span><p class="advantages__text">облегчает эксплуатацию двигателя при низких температурах</p>
+        </li>
+        <li class="advantages__item">
+          <span class="advantages__trap"></span><p class="advantages__text">защищает от коррозии топливную систему</p>
+        </li>
+      </ul>
+    </section>
+    <section class="map" id="map">
+      <h2 class="map__title">Карта АЗС</h2>
+      <div id="contactsmap"></div>
+    </section>
+    <div class="blue-line">
+    </div>
+    <section class="request" id="request">
+    <div class="request__left">
+    <h2 class="request__title">Обратная связь</h2>
+    <ul class="request__list">
+      <li class="request__item">Есть вопрос?</li>
+      <li class="request__item">Хотите оставить отзыв?</li>
+      <li class="request__item">Есть предложения?</li>
+    </ul>
+  </div>
+  <div class="request__right">
+    <form class="request__form" method="post">
+      <div class="request__field">
+       <label class="request__label" for="name">Ваше имя*</label>
+       <input type="text" id="name" class="request__input" data-req="req">
+     </div>
+     <div class="request__field">
+     <label class="request__label" for="mail">Ваш e-mail*</label>
+     <input type="text" id="mail" class="request__input" data-req="req">
+     </div>
+     <div class="request__field">
+       <label class="request__label" for="phone">Ваш телефон*</label>
+       <input type="text" id="phone" class="request__input request__input--phone" data-req="req" data-type="mobile">
+     </div>
+     <div class="request__field request__field--textarea">
+     <label class="request__label request__label--textarea" for="msg">Ваше сообщение*</label>
+     <textarea id="msg" class="request__input request__input--textarea"></textarea>
+     </div>
+     <div class="request__field">
+     <label class="request__label" for="captcha">Введите код*</label>
+     <div class="request__captcha-block"><input type="text" id="captcha" class="request__input request__input--captcha" data-req="req">
+     <img class="request__captcha" src="assets/img/captcha.png"></div>
+     </div>
+     <div class="request__field request__field--radio">
+       <input class="request__radio" id="radio" type="checkbox" checked><label for="radio" class="request__radio-label">Даю согласие на <a data-fancybox class="request__link" href="#agreement">обработку персональных данных*</a></label>
+     </div>
+      <div class="request__field">
+     <button class="request__btn" type="submit">Отправить</button>
+   </div>
+    </form>
+  </div>
+  </section>
+  <div class="blue-line">
+  </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__info">
+        <p class="footer__info-top">
+          <span class="footer__info-first">* За счет снижения образования отложений на 50% и более</span>
+          <span class="footer__info-second">** При регулярном использовании</span>
+        </p>
+        <p class="footer__info-bottom">
+          <span>® 2018 АО «Независимая нефтегазовая компания».</span>
+          <a data-fancybox class="footer__link-agrmnt" href="#agreement">Пользовательское&nbsp;соглашение&nbsp;и юридическая&nbsp;информация.</a>
+        </p>
+       </div>
+        <a class="footer__link-dvlp" href="http://vane.ru/" target="_blank">Разработка сайта</a>
+      </div>
+    </footer>
+    <div class="agreement" id="agreement">
+  <a class="agreement__close" href="javascript:parent.$.fancybox.close();"></a>
+  <p class="agreement__title">Пользовательское соглашение</p>
+  <p class="agreement__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione, inventore ad quaerat! Alias nesciunt dolore sit odit eveniet, est, iste, numquam exercitationem voluptates fugit voluptas. Quae suscipit corporis, perspiciatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolore repellat dolores adipisci quod culpa aperiam doloremque animi repellendus necessitatibus eligendi fuga accusantium, fugiat, explicabo quo tenetur dictveniam odio?</p>
+</div>
+
+    <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/jquery.inputmask.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASrEcuWv4jQn7jOq_mzNiGBs5f8Fjd0yY" type="text/javascript"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+
+  </body>
+</html>
